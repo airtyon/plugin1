@@ -9,6 +9,6 @@ public class SampleE4Handler
 	@Execute
 	public void execute(Shell shell)
 	{
-		MessageDialog.openInformation(shell, "First", "Hiii :)");
+		MessageDialog.openInformation(shell, "First", "Hi :)");
 	}
 }
