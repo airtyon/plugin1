@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_xK7B0A4YEeavkupp73BoWA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_S3qCMA4ZEeavkupp73BoWA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_d9VWIA4ZEeavkupp73BoWA" elementId="com.ertjon.plugin.first.command.sample" commandName="Sample"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_vpJQkA4ZEeavkupp73BoWA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_y8U4kA4ZEeavkupp73BoWA" elementId="com.ertjon.plugin.first.handler.0" contributionURI="bundleclass://com.ertjon.plugin.first/com.ertjon.plugin.first.handlers.SampleE4Handler" command="_d9VWIA4ZEeavkupp73BoWA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_N5d0cA4aEeavkupp73BoWA" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_TOqXgA4aEeavkupp73BoWA" elementId="com.ertjon.plugin.first.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_mx8w8A4aEeavkupp73BoWA" elementId="com.ertjon.plugin.first.menu.newMenu" label="e4 sample menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_s5yR4A4aEeavkupp73BoWA" elementId="id.e4Sample" label="e4 sample menu" iconURI="platform:/plugin/com.ertjon.plugin.first/icons/sample.gif" command="_d9VWIA4ZEeavkupp73BoWA"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4i8tYA4aEeavkupp73BoWA" featurename="trimContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:TrimContribution" xmi:id="_NPyI0A4bEeavkupp73BoWA" elementId="com.ertjon.plugin.first.trimcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:ToolBar" xmi:id="_UTliwA4bEeavkupp73BoWA" elementId="com.ertjon.plugin.first.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_bZZH0A4bEeavkupp73BoWA" elementId="com.ertjon.plugin.first.handledtoolitem.e4Button" label="e4 button" command="_d9VWIA4ZEeavkupp73BoWA"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
