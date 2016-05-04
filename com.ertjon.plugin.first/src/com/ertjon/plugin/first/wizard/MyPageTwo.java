@@ -19,14 +19,14 @@ public class MyPageTwo extends WizardPage
 	private Text text1;
 	private Composite container;
 
-
-
 	public MyPageTwo() 
 	{
 		super("Second Page");
 		setTitle("Second Page");
 		setDescription("Now this is the second page");
 		setControl(text1);
+		
+		
 	}
 
 	@Override

@@ -2,10 +2,13 @@ package com.ertjon.plugin.first.wizard;
 
 import org.eclipse.jface.wizard.Wizard;
 
+import com.ertjon.plugin.first.tests.NewModuleWizardPage;
+
 public class MyWizard extends Wizard
 {
 	protected MyPageOne one;
 	protected MyPageTwo two;
+	protected NewModuleWizardPage tt;
 	
 	public MyWizard() 
 	{
@@ -24,8 +27,10 @@ public class MyWizard extends Wizard
 	{
 		one=new MyPageOne();
 		two=new MyPageTwo();
+		tt=new NewModuleWizardPage();
 		addPage(one);
 		addPage(two);
+		addPage(tt);
 	}
 
 	@Override
